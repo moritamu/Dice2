@@ -1,7 +1,7 @@
 //
 //  ContentView.swift
 //  Dice2
-//
+//  https://ios-docs.dev/swiftui-part6/
 //  Created by MsMacM on 2023/04/08.
 //
 
