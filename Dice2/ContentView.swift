@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var randomNumber = 1
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Spacer()
+            Image(systemName: "die.face.\(randomNumber)")
+                .resizable()
+                .scaledToFit()
+                .frame(width: UIScreen.main.bounds.width/2)
+                .padding()
+            Spacer()
+            Button(action: {
+                print("ボタンが押された")
+                randomNumber = Int.random(in: 1...6)
+            }) {
+                Text("サイコロを振る")
+                    .padding()
+                    .background(.orange)
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                    .font(.largeTitle)
+            }
+            Spacer()
         }
-        .padding()
     }
 }
 
