@@ -15,6 +15,7 @@ struct ContentView: View {
             Image(systemName: "die.face.\(randomNumber)")
                 .resizable()
                 .scaledToFit()
+//            ここでエラーが出ている
                 .frame(width: UIScreen.main.bounds.width/2)
                 .padding()
             Spacer()
